@@ -4,7 +4,7 @@
 #' @description Estimate the health risk based on exposure concentrations of air pollutants, 
 #' and health benefits if target concentrations or reduced percentage is provided.
 #' PLEASE DOWNLOAD OUR XLSX FILE TEMPLATE REQUIRED BY THIS FUNCTION: 
-#' \url{https://raw.githubusercontent.com/liunr24/Health_risk_R_package/main/HealthRisk_template.xlsx}
+#' \url{https://raw.githubusercontent.com/liunr24/Health_risk_R_package/main/HealthRisktemplate.xlsx}
 #'  
 #' @param file_path The file path of the baseline data, including exposure concentration, 
 #' population, baseline incidence rate, and exposure-response relationships. 
@@ -22,16 +22,16 @@
 #' @return The health risk or benefits in the form of mortality and incidence cases.
 #' @examples 
 #' result1 <- HealthRisk();
-#' result1 <- HealthRisk(file_path = "HealthRisk_template.xlsx",mode = "risk"); # Health risk of current exposure
+#' result1 <- HealthRisk(file_path = "HealthRisktemplate.xlsx",mode = "risk"); # Health risk of current exposure
 #' 
 #' 
-#' result2 <- HealthRisk(file_path = "HealthRisk_template.xlsx",mode = "benefit",
+#' result2 <- HealthRisk(file_path = "HealthRisktemplate.xlsx",mode = "benefit",
 #'                       target_type = "percentage",target_value = rep(0.1,24)); # Health benefit from reducing exposure by 10%
 #' @export
 
 
 
-HealthRisk <- function(file_path = "HealthRisk_template.xlsx",mode = "risk",target_type,target_value) {
+HealthRisk <- function(file_path = "HealthRisktemplate.xlsx",mode = "risk",target_type,target_value) {
   ## Read files
   inputdata <- lapply(readxl::excel_sheets(file_path), readxl::read_excel, path = file_path)
   names(inputdata) <- readxl::excel_sheets(file_path)

@@ -1,7 +1,7 @@
 # Health_risk_R_package
 HealthRisk function in the HealthRiskAir package is a function to estimate the health risk of exposure to PM2.5 and other air pollutants, or the health benefits when the exposure levels are reduced to a given value.
 
-**(1) Input data file**
+**(1) Input data file**  
 The users should first download the HealthRisktemplate.xlsx template file in the github webpage: https://raw.githubusercontent.com/liunr24/Health_risk_R_package/main/HealthRisktemplate.xlsx
 You need to download the file to the workspace of your R file, or you need to specify the file path in the HealthRisk function later.
 
@@ -23,10 +23,10 @@ Population: The total population counts of the corresponding age group in the sp
 
 The template file can include multiple sheets. Each sheet represent one site, and you can rename the sheet as the name of the site. The current example has three sites/sheets.
 
-**(2) HealthRisk function**
+**(2) HealthRisk function**  
 Some information about this function can be found in the help page. Here are some further details. The output of this function is the attributable mortality/incidence/hospital admission cases of the air pollutant exposures, or the health benefits (i.e., avoided cases) of reducing these air pollutant exposures. If you have multiple sites, each column gives the results of each site.
 
-**Function:**
+**Function:**  
 HealthRisk(
   file_path = "HealthRisktemplate.xlsx",
   mode = "risk",

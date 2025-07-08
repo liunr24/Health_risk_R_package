@@ -34,10 +34,10 @@ HealthRisk(
   target_value
 )
 
-**file_path:** The file path of the baseline data, including exposure concentration, population, baseline incidence rate, and exposure-response relationships.
-**mode:** The estimation type: "risk" (default) for the health risk based on current exposure concentrations; "benefit" for the health benefit if the air pollutant concentrations are reduced by a given percentage or reduced to given target concentrations.
-**target_type:** The type of target value: "threshold" means that the target_value is a threshold concentration to which the air pollutant exposure will be reduced; "percentage" means that the target_value is a percentage by which the the air pollutant exposure will be reduced; This parameter is not required when "mode" is "risk".
-**target_value:** The target value for controlling the air pollution. It should be a threshold concentration to which the air pollutant exposure will be reduced if "target_type" is "threshold"; it should be a percentage by which the the air pollutant exposure will be reduced if "target_type" is "percentage"; This parameter is not required when "mode" is "risk".
+**file_path:** The file path of the baseline data, including exposure concentration, population, baseline incidence rate, and exposure-response relationships.  
+**mode:** The estimation type: "risk" (default) for the health risk based on current exposure concentrations; "benefit" for the health benefit if the air pollutant concentrations are reduced by a given percentage or reduced to given target concentrations.  
+**target_type:** The type of target value: "threshold" means that the target_value is a threshold concentration to which the air pollutant exposure will be reduced; "percentage" means that the target_value is a percentage by which the the air pollutant exposure will be reduced; This parameter is not required when "mode" is "risk".  
+**target_value:** The target value for controlling the air pollution. It should be a threshold concentration to which the air pollutant exposure will be reduced if "target_type" is "threshold"; it should be a percentage by which the the air pollutant exposure will be reduced if "target_type" is "percentage"; This parameter is not required when "mode" is "risk".  
 
 **Examples:**
 result1 <- HealthRisk();

@@ -7,14 +7,14 @@ You need to download the file to the workspace of your R file, or you need to sp
 
 The template file provides input data for the health risk estimation. The meaning of each column is introduced below.
 The first eight columns is specified by the template file, which include the exposure-response relationships of PM2.5 (from EPA COBRA database), ultrafine particle (UFP) counts (from two cohort studies), and NO2 (from one cohort study). You can add or remove some relationships as you want.
-**Pollutant:** The air pollutant of which you want to estimate the health risk.
-**Metric:** "Annual" means long-term health effects of this air pollutant exposure, while "Daily" means short-term health effects. This column is not for calculation but only for notes, so you can label this attribute as you want.
-**Outcome:** The health outcome for this exposure-response relationship.
-**Age:** The age groups for the epidemiological study which obtained this relationship.
-**Beta:** The coefficient of the exposure-response relationship. Usually Beta equals to log(HR), log(RR) or log(OR). Details can be found in the user guide of COBRA.
-**Delta:** If Delta = 1, it means that HR, RR, or OR is per 1 unit increase.
-**Unit:** The unit of exposure concentrations of the air pollutant used in the relationship.
-**Form:** The model form used by the epidemiological study to obtain the exposure-response relationship, i.e., Log-linear, or Logistic.
+**Pollutant:** The air pollutant of which you want to estimate the health risk.  
+**Metric:** "Annual" means long-term health effects of this air pollutant exposure, while "Daily" means short-term health effects. This column is not for calculation but only for notes, so you can label this attribute as you want.  
+**Outcome:** The health outcome for this exposure-response relationship.  
+**Age:** The age groups for the epidemiological study which obtained this relationship.  
+**Beta:** The coefficient of the exposure-response relationship. Usually Beta equals to log(HR), log(RR) or log(OR). Details can be found in the user guide of COBRA.  
+**Delta:** If Delta = 1, it means that HR, RR, or OR is per 1 unit increase.  
+**Unit:** The unit of exposure concentrations of the air pollutant used in the relationship.  
+**Form:** The model form used by the epidemiological study to obtain the exposure-response relationship, i.e., Log-linear, or Logistic.  
 
 The remaining columns should be provided by the users themselves. Currently the template provides some example datasets.
 Exposure: The exposure concentration of the air pollutants in your study.

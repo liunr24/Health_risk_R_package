@@ -27,7 +27,8 @@ This parameter is not required when "mode" is "risk".}
 \item{target_value}{The target value for controlling the air pollution. It should be a 
 threshold concentration to which the air pollutant exposure will be reduced if "target_type" is "threshold"; 
 it should be a percentage by which the the air pollutant exposure will be reduced if "target_type" is 
-"percentage"; This parameter is not required when "mode" is "risk".}
+"percentage"; This parameter is not required when "mode" is "risk".The length of this vector should be 
+the same as the number of rows in the template file.}
 }
 \value{
 The health risk or benefits in the form of mortality and incidence cases.
